@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-azulescuro">
+
+    <div class="blurimgbody"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar bg-transparent">
+        <div class="container-fluid">
+            <button class="btn btn-vermelhovl p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                ☰ Menu
+            </button>
+        </div>
+    </nav>
+
+    <!-- OFFCANVAS -->
+    <div class="offcanvas offcanvas-start" id="menu">
+
+        <div class="offcanvas-header bg-azulescuro">
+            <h5 class="offcanvas-title text-light">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body bg-azulescuro d-flex flex-column gap-2">
+
+            <a href="login.html" class="btn opcaomenu border-light text-light">Login</a>
+            <a href="index.html" class="btn opcaomenu text-light border-light">Site Principal</a>
+
+        </div>
+    </div>
+
+    <!-- CADASTRO -->
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-7">
+
+                <form action="login.html" class="card shadow p-4 corform text-light border border-light rounded-4">
+
+                    <h2 class="text-center mb-4">Faça seu cadastro</h2>
+
+                    <!-- NOME -->
+                    <label class="form-label">Nome Completo</label>
+                    <input class="form-control rounded-3 mb-3" type="text" placeholder="Informe seu nome completo..."
+                        required>
+
+                    <!-- EMAIL -->
+                    <label class="form-label">Email</label>
+                    <input class="form-control rounded-3 mb-3" type="email" placeholder="Informe seu email..." required>
+
+                    <!-- SENHA -->
+                    <label class="form-label">Senha</label>
+                    <input class="form-control rounded-3 mb-3" type="password" placeholder="Informe sua senha..."
+                        required>
+
+                    <!-- CONFIRMAR SENHA -->
+                    <label class="form-label">Confirmar Senha</label>
+                    <input class="form-control rounded-3 mb-3" type="password" placeholder="Confirme sua senha..."
+                        required>
+
+                    <!-- FUNÇÃO -->
+                    <label class="form-label">Função Favorita</label>
+                    <div class="mb-3">
+
+                        <input type="radio" name="usuario" required> Duelista<br>
+                        <input type="radio" name="usuario"> Iniciador<br>
+                        <input type="radio" name="usuario"> Sentinela<br>
+                        <input type="radio" name="usuario"> Controlador
+
+                    </div>
+
+                    <!-- RANK -->
+                    <label class="form-label">Qual seu rank no jogo?</label>
+                    <select class="form-select rounded-3 mb-3" required>
+
+                        <option>Escolha uma opção...</option>
+                        <option>Ferro</option>
+                        <option>Bronze</option>
+                        <option>Prata</option>
+                        <option>Ouro</option>
+                        <option>Platina</option>
+                        <option>Diamante</option>
+                        <option>Ascendente</option>
+                        <option>Imortal</option>
+                        <option>Radiante</option>
+
+                    </select>
+
+                    <!-- CHECKBOX -->
+                    <div class="mb-4">
+                        <input type="checkbox" required> Aceito os termos
+                        <p>Ao aceitar, estará concordando em dar nota máxima para esse trabalho, e mais 0,2 pontos de
+                            bônus. hehe... 🤣</p>
+                    </div>
+
+                    <!-- BOTÃO -->
+                    <button class="btn btn-vermelhovl w-100">Cadastrar</button>
+
+                </form>
+
+            </div>
+        </div>
+
+        
+    </section>
+
+      <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- FOOTER -->
+    <footer class="footer border-top border-light">
+
+        <h2>&copy; 2026 - Luiz Filipe Alves Dias</h2>
+        <p>Desenvolvedor Front-End • HTML • CSS • Bootstrap</p>
+
+        <div class="icones">
+
+            <a href="https://www.instagram.com/lipewee1/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://github.com/LuizAlvesDias" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:luiz.alves.dias@rede.ulbra.br">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://wa.me/5551920028563" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

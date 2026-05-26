@@ -1,0 +1,367 @@
+/* FUNDO DO SITE */
+
+body {
+    background-color: rgb(7, 12, 17);
+    /* define a cor de fundo geral do site */
+   
+   
+}
+
+
+/* FUNDO BASE ESCURO */
+
+.bg-azulescuro {
+     background-color: rgb(3, 6, 11);
+    /* aplica um azul bem escuro nos elementos */
+     
+}
+
+
+/* FUNDO COM GIF DESFOCADO */
+
+.blurimgbody {
+    position: fixed;
+    /* fixa o fundo na tela mesmo com scroll */
+    width: 100%;
+    /* ocupa toda a largura */
+    height: 100vh;
+    /* ocupa toda a altura da tela */
+    background: url(Imagens_Fundos/CypherGIF.gif);
+    /* imagem/GIF de fundo */
+    background-size: cover;
+    /* faz o GIF cobrir toda a tela */
+    background-position: center;
+    /* centraliza o GIF */
+    filter: blur(7px);
+    /* aplica desfoque na imagem */
+    z-index: -1;
+    /* manda o fundo para trás dos outros elementos */
+}
+
+.blurimgbodyindex {
+    position: fixed;
+    /* fixa o fundo na tela mesmo com scroll */
+    width: 100%;
+    /* ocupa toda a largura */
+    height: 100vh;
+    /* ocupa toda a altura da tela */
+    background: url(Imagens_Fundos/ImagemFundoPrincipal.jpg);
+    /* imagem de fundo */
+    background-size: cover;
+    /* faz o GIF cobrir toda a tela */
+    background-position: center;
+    /* centraliza o GIF */
+    filter: blur(1px);
+    /* aplica desfoque na imagem */
+    z-index: -1;
+    /* manda o fundo para trás dos outros elementos */
+}
+
+
+
+/* NAVBAR / MENU */
+
+/* TEXTO DO NAVBAR */
+
+.texto-vermelho {
+    border: none;
+    /* remove borda padrão */
+    color: rgb(255, 255, 255);
+    /* texto branco */
+}
+
+.texto-vermelho:hover {
+    color: #ff4655;
+    /* muda para vermelho no hover */
+    transition: 0.3s;
+    /* animação suave */
+}
+
+
+/* MENU DE AGENTES */
+
+.menu-agentes {
+    backdrop-filter: blur(5px);
+    /* desfoca o fundo atrás */
+    -webkit-backdrop-filter: blur(8px);
+    /* compatibilidade Safari */
+    background-color: rgba(2, 2, 2, 0.479);
+    /* fundo escuro transparente */
+    border: 1px solid rgb(255, 255, 255);
+    /* borda branca */
+    width: 280px;
+    /* largura fixa do menu */
+}
+
+
+/* ITENS DO DROPDOWN */
+
+.dropdown-item {
+    color: #ffffff;
+    /* texto branco */
+}
+
+.dropdown-item:hover {
+    background-color: #ffffff;
+    /* fundo branco no hover */
+    color: rgba(255, 0, 0, 0.719);
+    /* texto vermelho no hover */
+}
+
+
+/* OPÇÕES DO MENU */
+
+.opcaomenu {
+    background-color: rgba(0, 0, 0, 0);
+    /* deixa o botão transparente */
+}
+
+.opcaomenu:hover {
+    background-color: #ff1b2e;
+    /* fundo branco transparente no hover */
+    transition: 0.3s;
+    /* animação suave */
+}
+
+
+
+/* BOTÕES */
+
+/* BOTÃO VERMELHO PADRÃO */
+
+.btn-vermelhovl {
+    background-color: #ff4655;
+    /* cor principal vermelha */
+    color: #ffffff;
+    /* texto branco */
+}
+
+.btn-vermelhovl:hover {
+    background-color: #ff1b2e;
+    /* vermelho mais escuro ao passar mouse */
+    color: #ffffff;
+    /* mantém texto branco */
+    transition: 0.3s;
+    /* animação suave */
+}
+
+
+/* BOTÕES DOS ÍCONES DO CARROSSEL */
+
+.botao-icon {
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    transition: 0.3s;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    min-width: 90px;
+}
+
+
+/* HOVER DOS BOTÕES */
+
+.botao-icon:hover {
+    background-color: #ff4655;
+    border-color: #ff4655;
+    transform: scale(1.08);
+}
+
+
+/* TEXTO DOS BOTÕES */
+
+.botao-icon span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+/* ÁREA DOS AGENTES */
+
+/* IMAGEM DOS AGENTES */
+
+.imagem-agente {
+    cursor: pointer;
+    /* mostra mãozinha ao passar o mouse */
+    transition: 0.5s;
+    /* suaviza animações */
+}
+
+.imagem-agente:hover {
+    transform: scale(1.03);
+    /* aumenta levemente a imagem */
+    filter: brightness(1.3);
+    /* deixa mais brilhante */
+}
+
+
+/* FORMULÁRIO */
+
+/* FORMULÁRIO COM EFEITO VIDRO */
+
+.corform {
+    
+    /* desfoca o fundo atrás do formulário */
+    background-color: rgba(2, 4, 8, 0.856);
+    /* fundo escuro transparente */
+    backdrop-filter: blur(5px);
+}
+
+
+
+/* MODAIS */
+
+/* FUNDO DO MODAL */
+
+.modal-blur {
+    backdrop-filter: blur(5px);
+    /* desfoca o fundo atrás do modal */
+    -webkit-backdrop-filter: blur(8px);
+    /* compatibilidade Safari */
+    background-color: rgba(2, 4, 8, 0.146);
+    /* escurece fundo */
+}
+
+
+/* CAIXA DO MODAL */
+
+.modal-content {
+    background: rgba(4, 7, 12, 0.689) !important;
+    /* fundo transparente */
+    backdrop-filter: blur(18px);
+    /* efeito vidro forte */
+    -webkit-backdrop-filter: blur(18px);
+    /* compatibilidade Safari */
+    border: 1px solid rgb(255, 255, 255);
+    /* borda branca */
+    border-radius: 20px;
+    /* bordas arredondadas */
+}
+
+
+
+/* TÍTULOS */
+
+/* TÍTULO DAS FUNÇÕES */
+
+.titulo-funcao {
+    background-color: #ff4655;
+    /* fundo vermelho */
+    height: 35px;
+    /* altura fixa */
+    align-items: center;
+    /* centraliza verticalmente */
+    display: flex;
+    /* ativa flexbox */
+    justify-content: left;
+    /* alinha à esquerda */
+    gap: 10px;
+    /* espaço entre elementos */
+    padding-left: 15px;
+    /* espaço interno à esquerda */
+    color: #ffffff;
+    /* texto branco */
+    font-size: 20px;
+    /* tamanho do texto */
+}
+
+
+/* ÍCONE DO TÍTULO */
+
+.titulo-funcao img {
+    width: 20px;
+    /* tamanho do ícone */
+}
+
+
+
+/* CARROSSEL */
+
+/* TRANSIÇÃO DO CARROSSEL */
+
+.carousel-item {
+    transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+
+
+
+/* EFEITO DOS SLIDES */
+
+.carousel-item-next,
+.carousel-item-prev {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+
+/* ITEM ATIVO */
+
+.carousel-item.active {
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+
+/* CARROSSEL DOS MODAIS */
+
+.CarouselMODAL {
+    transition: transform 0s;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: rgba(3, 6, 11);
+    /* fundo escuro transparente */
+    color: white;
+    /* texto branco */
+    text-align: center;
+    /* centraliza texto */
+    padding: 50px 20px;
+    /* espaçamento interno */
+    
+   
+}
+
+
+/* TEXTO DO FOOTER */
+
+.footer p {
+    color: rgb(181, 181, 181);
+    /* cinza claro */
+    margin: 15px 0;
+    /* espaço em cima e embaixo */
+}
+
+
+/* ÍCONES DO FOOTER */
+
+.icones a {
+    color: white;
+    /* cor dos ícones */
+    font-size: 30px;
+    /* tamanho dos ícones */
+    margin: 12px;
+    /* espaço entre eles */
+    text-decoration: none;
+    /* remove sublinhado */
+    transition: 0.3s;
+    /* animação suave */
+}
+
+
+/* HOVER DOS ÍCONES */
+
+.icones a:hover {
+    color: #ff4655;
+    /* muda para vermelho no hover */
+}

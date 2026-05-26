@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-azulescuro bodyimage">
+
+    <div class="blurimgbody"></div>
+
+    <!-- MENU -->
+    <nav class="navbar bg-transparent">
+        <div class="container-fluid">
+
+            <button class="btn btn-vermelhovl p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                ☰ Menu
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- OFFCANVAS -->
+    <div class="offcanvas offcanvas-start" id="menu">
+
+        <div class="offcanvas-header bg-azulescuro">
+
+            <h5 class="offcanvas-title text-light">
+                Menu
+            </h5>
+
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+
+        </div>
+
+        <div class="offcanvas-body bg-azulescuro d-flex flex-column gap-2">
+
+            <a href="cadastro.html" class="btn opcaomenu text-light border-light">
+                Cadastro
+            </a>
+
+            <a href="index.html" class="btn opcaomenu text-light border-light">
+                Site Principal
+            </a>
+
+        </div>
+    </div>
+
+    <!-- LOGIN -->
+    <section class="container py-5">
+
+        <div class="row justify-content-center align-items-center" style="height: 70vh;">
+
+            <div class="col-12 col-md-6">
+
+                <form action="index.html" class="card shadow p-4 corform border border-light text-light rounded-4">
+
+                    <h2 class="text-center mb-4">
+                        Login
+                    </h2>
+
+                    <!-- EMAIL -->
+                    <label class="form-label">
+                        Email
+                    </label>
+
+                    <input class="form-control mb-3 rounded-3" type="email" placeholder="Informe seu email..." required>
+
+                    <!-- SENHA -->
+                    <label class="form-label">
+                        Senha
+                    </label>
+
+                    <input class="form-control mb-2 rounded-3" type="password" placeholder="Informe sua senha..."
+                        required>
+
+                    <h2 class="text-left pt-0 mb-4" style="font-size: 15px;">
+                        Não tem uma conta?
+                        <a class="texto-vermelho" href="cadastro.html">Cadastre-se</a>
+                    </h2>
+
+                    <!-- BOTÃO -->
+                    <button class="btn btn-vermelhovl rounded-3 w-100">
+                        Entrar
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+      <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- FOOTER -->
+    <footer class="footer border-top border-lightr">
+
+        <h2>&copy; 2026 - Luiz Filipe Alves Dias</h2>
+        <p>Desenvolvedor Front-End • HTML • CSS • Bootstrap</p>
+
+        <div class="icones">
+
+            <a href="https://www.instagram.com/lipewee1/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://github.com/LuizAlvesDias" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:luiz.alves.dias@rede.ulbra.br">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://wa.me/5551920028563" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

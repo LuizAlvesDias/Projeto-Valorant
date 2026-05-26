@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Valorant</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="blurimgbodyindex"></div>
+
+    <main>
+        <!-- MENU NAVEGAÇÃO -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-azulescuro">
+                <div class="container-fluid">
+
+                    <!-- LOGO -->
+                    <a class="navbar-brand d-flex" href="index.html">
+                        <img width="40" src="./Logo Valorant/Logo Valorant.svg" alt="Logo Valorant">
+                    </a>
+
+                    <!-- BOTÃO MOBILE -->
+                    <button class="navbar-toggler navbar-dark border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+                    <!-- MENU -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+
+                        <ul class="navbar-nav align-items-lg-center gap-lg-3 ms-1">
+
+                            <!-- MENU OFFCANVAS -->
+                            <li class="nav-item">
+
+                                <button class="btn texto-vermelho bg-transparent p-1"
+                                    style="font-weight: 450; font-size: 20px;" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#menu">
+                                    ☰ Menu
+                                </button>
+
+                            </li>
+
+                            <!-- INÍCIO -->
+                            <li class="nav-item">
+                                <a class="nav-link texto-vermelho" style="font-weight: 450; font-size: 20px;"
+                                    aria-current="page" href="index.html">
+                                    Início
+                                </a>
+                            </li>
+
+                            <!-- AGENTES -->
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle texto-vermelho"
+                                    style="font-weight: 450; font-size: 20px;" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Agentes
+                                </a>
+
+                                <ul class="dropdown-menu menu-agentes dropdown-lg">
+
+                                    <div class="pt-2">
+
+                                        <h1 class="titulo-funcao">
+
+                                            <img src="./Funções Agentes - Icons/Icon-sentinela.svg" alt="">
+                                            SENTINELAS
+
+                                        </h1>
+
+                                    </div>
+
+                                    <li><a class="dropdown-item" href="#agentes">Sage</a></li>
+                                    <li><a class="dropdown-item" href="#agentes">Cypher</a></li>
+
+                                    <li>
+
+                                        <div class="pt-2">
+
+                                            <h1 class="titulo-funcao">
+
+                                                <img src="./Funções Agentes - Icons/icon-controlador.svg" alt="">
+                                                CONTROLADORES
+
+                                            </h1>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="#agentes">Omen</a></li>
+                                    <li><a class="dropdown-item" href="#agentes">Clove</a></li>
+
+                                    <div class="pt-2">
+
+                                        <h1 class="titulo-funcao">
+
+                                            <img src="./Funções Agentes - Icons/icon-duelista.svg" alt="">
+                                            DUELISTAS
+
+                                        </h1>
+
+                                    </div>
+
+                                    <li><a class="dropdown-item" href="#agentes">Raze</a></li>
+                                    <li><a class="dropdown-item" href="#agentes">Jett</a></li>
+
+                                    <div class="pt-2">
+
+                                        <h1 class="titulo-funcao">
+
+                                            <img src="./Funções Agentes - Icons/icon-iniciador.svg" alt="">
+                                            INICIADORES
+
+                                        </h1>
+
+                                    </div>
+
+                                    <li><a class="dropdown-item" href="#agentes">Skye</a></li>
+                                    <li><a class="dropdown-item" href="#agentes">Gekko</a></li>
+
+                                </ul>
+
+                            </li>
+
+                            <!-- FUNÇÕES -->
+                            <li class="nav-item">
+
+                                <a class="nav-link texto-vermelho" style="font-weight: 450; font-size: 20px;"
+                                    href="#funçõesagentes">
+
+                                    Funções dos Agentes
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- OFFCANVAS -->
+        <div class="offcanvas offcanvas-start" id="menu">
+
+            <div class="offcanvas-header bg-azulescuro">
+
+                <h5 class="offcanvas-title text-light">
+                    Menu
+                </h5>
+
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+
+            </div>
+
+            <div class="offcanvas-body bg-azulescuro d-flex flex-column gap-2">
+
+                <a href="login.html" class="btn opcaomenu text-light border-light">
+                    Login
+                </a>
+
+                <a href="cadastro.html" class="btn opcaomenu text-light border-light">
+                    Cadastro
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARROSSEL -->
+        <section id="carouselExampleIndicators" class="carousel slide border-bottom border-top" data-bs-ride="carousel"
+            data-bs-interval="4000">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="./BANNERS/banner-principal.jpg" class="d-block w-100 mx-auto " alt="Banner Principal">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./BANNERS/sage-banner.jpg" class="d-block w-100 mx-auto" alt="Banner Sage">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./BANNERS/cypher-banner.jpg" class="d-block w-100 mx-auto " alt="Banner Cypher">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./BANNERS/omen-banner.jpg" class="d-block w-100 mx-auto" alt="Banner omen">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./BANNERS/clove-banner.jpg" class="d-block w-100 mx-auto" alt="Banner Clove">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./BANNERS/raze-banner.jpg" class="d-block w-100 mx-auto" alt="Banner Raze">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./BANNERS/jett-banner.jpg" class="d-block w-100 mx-auto" alt="Banner Jett">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./BANNERS/gekko-banner.jpg" class="d-block w-100 mx-auto" alt="Banner Gekko">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./BANNERS/skye-banner.jpg" class="d-block w-100 mx-auto" alt="Banner Skye">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </section>
+
+
+        <!-- CARDS -->
+        <section id="agentes" class="container-fluid pt-3 pb-1">
+
+            <div class="row justify-content-center g-3">
+
+                <div class="col-12 col-sm-6 col-lg-3 px-2 py-3">
+                    <div class="card border-0 bg-transparent">
+
+                        <img src="./CARDS/sage-card.png" class="card-img-top imagem-agente rounded-4" alt="Sage"
+                            data-bs-toggle="modal" data-bs-target="#modalSage">
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 px-2 py-3">
+                    <div class="card border-0 bg-transparent">
+
+                        <img src="./CARDS/cypher-card.png" class="card-img-top imagem-agente rounded-4" alt="Cypher"
+                            data-bs-toggle="modal" data-bs-target="#modalCypher">
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 px-2 py-3">
+                    <div class="card border-0 bg-transparent">
+
+                        <img src="./CARDS/omen-card.png" class="card-img-top imagem-agente rounded-4" alt="Omen"
+                            data-bs-toggle="modal" data-bs-target="#modalOmen">
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 px-2 py-3">
+                    <div class="card border-0 bg-transparent">
+
+                        <img src="./CARDS/clove-card.png" class="card-img-top imagem-agente rounded-4" alt="Clove"
+                            data-bs-toggle="modal" data-bs-target="#modalClove">
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 px-2 py-3">
+                    <div class="card border-0 bg-transparent">
+
+                        <img src="./CARDS/raze-card.png" class="card-img-top imagem-agente rounded-4" alt="Raze"
+                            data-bs-toggle="modal" data-bs-target="#modalRaze">
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 px-2 py-3">
+                    <div class="card border-0 bg-transparent">
+
+                        <img src="./CARDS/jett-card.png" class="card-img-top imagem-agente rounded-4" alt="Jett"
+                            data-bs-toggle="modal" data-bs-target="#modalJett">
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 px-2 py-3">
+                    <div class="card border-0 bg-transparent">
+
+                        <img src="./CARDS/gekko-card.png" class="card-img-top imagem-agente rounded-4" alt="Gekko"
+                            data-bs-toggle="modal" data-bs-target="#modalGekko">
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 px-2 py-3">
+                    <div class="card border-0 bg-transparent">
+
+                        <img src="./CARDS/skye-card.png" class="card-img-top imagem-agente rounded-4" alt="Skye"
+                            data-bs-toggle="modal" data-bs-target="#modalSkye">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- TEXTO FUNÇÕES -->
+        <div class="p-4 my-5 bg-azulescuro border-top border-bottom border-white">
+            <h1 class="text-center text-light">FUNÇÕES DOS AGENTES</h1>
+        </div>
+
+
+        <!-- Funções Agentes -->
+        <section id="funçõesagentes" class="container-fluid py-5">
+            <div class="row justify-content-center text-center">
+                <!-- SENTINELA -->
+                <div class="col-12 col-sm-6 col-lg-3 px-4 mb-5">
+                    <div class="d-flex flex-column align-items-center h-100">
+                        <div style="height: 120px;">
+                            <img src="./Funções Agentes - Icons/Icon-sentinela.svg" width="110" alt="SENTINELA">
+                        </div>
+                        <h5 class="text-light">
+                            Sentinela
+                        </h5>
+                        <p class="text-light">
+                            Focados em defesa e suporte da equipe.
+                            Conseguem proteger áreas, impedir flancos e manter o controle
+                            do mapa usando armadilhas, cura ou habilidades defensivas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CONTROLADOR -->
+                <div class="col-12 col-sm-6 col-lg-3 px-4 mb-5">
+                    <div class="d-flex flex-column align-items-center h-100">
+                        <div style="height: 120px;">
+                            <img src="./Funções Agentes - Icons/icon-controlador.svg" width="110" alt="CONTROLADOR">
+                        </div>
+                        <h5 class="text-light">
+                            Controlador
+                        </h5>
+                        <p class="text-light">
+                            Especialistas em controlar o mapa e dificultar a visão inimiga.
+                            Utilizam smokes e habilidades que atrasam avanços.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- DUELISTA -->
+                <div class="col-12 col-sm-6 col-lg-3 px-4 mb-5">
+                    <div class="d-flex flex-column align-items-center h-100">
+                        <div style="height: 120px;">
+                            <img src="./Funções Agentes - Icons/icon-duelista.svg" width="110" alt="DUELISTA">
+                        </div>
+                        <h5 class="text-light">
+                            Duelista
+                        </h5>
+                        <p class="text-light">
+                            São os agentes mais agressivos do jogo.
+                            Entram primeiro nos bombsites buscando eliminações rápidas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- INICIADOR -->
+                <div class="col-12 col-sm-6 col-lg-3 px-4 mb-5">
+                    <div class="d-flex flex-column align-items-center h-100">
+                        <div style="height: 120px;">
+                            <img src="./Funções Agentes - Icons/icon-iniciador.svg" width="110" alt="INICIADOR">
+                        </div>
+                        <h5 class="text-light">
+                            Iniciador
+                        </h5>
+                        <p class="text-light">
+                            Responsáveis por preparar a entrada do time,
+                            revelando inimigos e facilitando ataques coordenados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- MODALS -->
+        <section>
+            <!-- MODAL SAGE -->
+            <div class="modal fade modal-blur" id="modalSage">
+
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+
+                    <div class="modal-content bg-dark text-white">
+
+                        <div class="modal-header">
+
+                            <h1 class="modal-title fs-4">Sage</h1>
+
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+
+                        </div>
+
+                        <div class="modal-body">
+
+                            <img src="./Corpos dos Agentes/corpo-sage.png" class="img-fluid rounded-4 mb-4">
+
+                            <p class="mb">
+                                Como uma verdadeira fortaleza chinesa, Sage traz segurança para si mesma e para a equipe
+                                aonde quer que vá. Capaz de reviver aliados e rechaçar investidas agressivas, ela
+                                oferece um centro de calmaria em meio ao caos da batalha.
+                            </p>
+
+                            <div
+                                class="bg-transparent border border-light text-white rounded-top-4 d-flex align-items-center justify-content-center p-2 mt-5">
+                                <h4 class="m-0" style="font-size: 30px; font-weight: 500;">HABILIDADES</h4>
+                            </div>
+
+                            <!-- CARROSSEL -->
+                            <section id="carouselSage" class="carousel slide mx-auto">
+
+                                <div class="carousel-inner rounded-bottom-4 border border-light">
+                                    <div class="carousel-item CarouselMODAL active">
+                                        <img src="./GIFS/SAGE GIFS/Orbe Lentidão.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/SAGE GIFS/Orbe Curativo.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/SAGE GIFS/Orbe de Barreira.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/SAGE GIFS/Ressurreição.gif" class="d-block w-100" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- ÍCONES -->
+                                <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+                                    <!-- ORBE DE LENTIDÃO -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselSage" data-bs-slide-to="0">
+                                        <img src="./Habilidades dos Agntes - Icons/SAGE HAB/SAGE - Icon Orbe Lentidão.svg"
+                                            width="40">
+                                        <span>Orbe de Lentidão</span>
+                                    </button>
+
+                                    <!-- ORBE CURATIVO -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselSage" data-bs-slide-to="1">
+                                        <img src="./Habilidades dos Agntes - Icons/SAGE HAB/SAGE - Icon Cura.svg"
+                                            width="40">
+                                        <span>Orbe Curativo</span>
+                                    </button>
+
+                                    <!-- BARREIRA -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselSage" data-bs-slide-to="2">
+                                        <img src="./Habilidades dos Agntes - Icons/SAGE HAB/SAGE - Icon Parede.svg"
+                                            width="40">
+                                        <span>Orbe de Barreira</span>
+                                    </button>
+
+                                    <!-- ULTIMATE -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselSage" data-bs-slide-to="3">
+                                        <img src="./Habilidades dos Agntes - Icons/SAGE HAB/SAGE - Icon Ressureição.svg"
+                                            width="40">
+                                        <span>Ressurreição</span>
+                                    </button>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-vermelhovl" data-bs-dismiss="modal">
+                                Fechar
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MODAL CYPHER -->
+            <div class="modal fade modal-blur" id="modalCypher">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-4">Cypher</h1>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./Corpos dos Agentes/corpo-cypher.png" class="img-fluid rounded-4 mb-4">
+                            <p>
+                                Cypher, um vendedor de informações do Marrocos, é uma verdadeira rede de vigilância
+                                de
+                                um homem só que fica de olho em cada movimento dos inimigos. Nenhum segredo está a
+                                salvo. Nenhuma manobra passa despercebida. Cypher está sempre vigiando.
+                            </p>
+
+                            <div
+                                class="bg-transparent border border-light text-white rounded-top-4 d-flex align-items-center justify-content-center p-2 mt-5">
+                                <h4 class="m-0" style="font-size: 30px; font-weight: 500;">HABILIDADES</h4>
+                            </div>
+
+                            <!-- CARROSSEL -->
+                            <section id="carouselCypher" class="carousel slide mx-auto">
+
+                                <div class="carousel-inner rounded-bottom-4 border border-light">
+                                    <div class="carousel-item CarouselMODAL active">
+                                        <img src="./GIFS/CYPHER GIFS/JAULA CIBERNÉTICA.gif" class="d-block w-100"
+                                            alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/CYPHER GIFS/Câmera de Vigilância.gif" class="d-block w-100"
+                                            alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/CYPHER GIFS/Fio-Armadilha.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/CYPHER GIFS/Assalto Neural.gif" class="d-block w-100" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- ÍCONES -->
+                                <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+                                    <!-- Jaula Cibernética  -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselCypher" data-bs-slide-to="0">
+                                        <img src="./Habilidades dos Agntes - Icons/CYPHER HAB/Jaula Cibernética.svg"
+                                            width="40">
+                                        <span>Jaula Cibernética </span>
+                                    </button>
+
+                                    <!-- Câmera de Vigilância -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselCypher" data-bs-slide-to="1">
+                                        <img src="./Habilidades dos Agntes - Icons/CYPHER HAB/Câmera de Vigilância.svg"
+                                            width="40">
+                                        <span>Câmera de Vigilância</span>
+                                    </button>
+
+                                    <!-- Fio-Armadilha -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselCypher" data-bs-slide-to="2">
+                                        <img src="./Habilidades dos Agntes - Icons/CYPHER HAB/Fio-Armadilha.svg"
+                                            width="40">
+                                        <span>Fio-Armadilha</span>
+                                    </button>
+
+                                    <!-- ULTIMATE -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselCypher" data-bs-slide-to="3">
+                                        <img src="./Habilidades dos Agntes - Icons/CYPHER HAB/Assalto Neural.svg"
+                                            width="40">
+                                        <span>Assalto Neural</span>
+                                    </button>
+                                </div>
+                            </section>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-vermelhovl" data-bs-dismiss="modal">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MODAL OMEN -->
+            <div class="modal fade modal-blur" id="modalOmen">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-4">Omen</h1>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./Corpos dos Agentes/corpo-omen.png" class="img-fluid rounded-4 mb-4">
+                            <p>
+                                Omen, uma lembrança fantasmagórica, caça nas sombras. Ele cega os inimigos,
+                                teleporta-se
+                                pelo campo e deixa a paranoia assumir o controle enquanto o adversário tenta
+                                descobrir
+                                de onde virá seu próximo ataque.
+                            </p>
+
+                            <div
+                                class="bg-transparent border border-light text-white rounded-top-4 d-flex align-items-center justify-content-center p-2 mt-5">
+                                <h4 class="m-0" style="font-size: 30px; font-weight: 500;">HABILIDADES</h4>
+                            </div>
+
+                            <!-- CARROSSEL -->
+                            <section id="carouselOmen" class="carousel slide mx-auto">
+
+                                <div class="carousel-inner rounded-bottom-4 border border-light">
+                                    <div class="carousel-item CarouselMODAL active">
+                                        <img src="./GIFS/OMEN GIFS/Paranóia.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/OMEN GIFS/Manto Sombrio.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/OMEN GIFS/Passos Tenebrosos.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/OMEN GIFS/Salto das Sombras.gif" class="d-block w-100" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- ÍCONES -->
+                                <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+                                    <!-- Paranóia -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselOmen" data-bs-slide-to="0">
+                                        <img src="./Habilidades dos Agntes - Icons/OMEN HAB/Paranóia.svg" width="40">
+                                        <span>Paranóia</span>
+                                    </button>
+
+                                    <!-- Manto Sombrio -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselOmen" data-bs-slide-to="1">
+                                        <img src="./Habilidades dos Agntes - Icons/OMEN HAB/Manto Sombrio.svg"
+                                            width="40">
+                                        <span>Manto Sombrio</span>
+                                    </button>
+
+                                    <!-- Passos Tenebrosos  -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselOmen" data-bs-slide-to="2">
+                                        <img src="./Habilidades dos Agntes - Icons/OMEN HAB/Passos Tenebrosos.svg"
+                                            width="40">
+                                        <span>Passos Tenebrosos </span>
+                                    </button>
+
+                                    <!-- ULTIMATE -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselOmen" data-bs-slide-to="3">
+                                        <img src="./Habilidades dos Agntes - Icons/OMEN HAB/Salto das Sombras.svg"
+                                            width="40">
+                                        <span>Salto das Sombras</span>
+                                    </button>
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-vermelhovl" data-bs-dismiss="modal">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MODAL CLOVE -->
+            <div class="modal fade modal-blur" id="modalClove">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-4">Clove</h1>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./Corpos dos Agentes/clove-corpo.png" class="img-fluid rounded-4 mb-4">
+                            <p>
+                                Clove, ume encrenqueire da Escócia, vai desorientar os inimigos tanto no calor do
+                                combate quanto no frio da morte. Jovem e imortal, elu mantém os inimigos confusos
+                                até do
+                                além-túmulo: momentos após a morte, elu retorna à vida.
+                            </p>
+
+                            <div
+                                class="bg-transparent border border-light text-white rounded-top-4 d-flex align-items-center justify-content-center p-2 mt-5">
+                                <h4 class="m-0" style="font-size: 30px; font-weight: 500;">HABILIDADES</h4>
+                            </div>
+
+                            <!-- CARROSSEL -->
+                            <section id="carouselClove" class="carousel slide mx-auto">
+
+                                <div class="carousel-inner rounded-bottom-4 border border-light">
+                                    <div class="carousel-item CarouselMODAL active">
+                                        <img src="./Gifs/CLOVE GIFS/Desvitalização.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/CLOVE GIFS/Artimanha.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/CLOVE GIFS/Revitalizar.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/CLOVE GIFS/Ainda não morri.gif" class="d-block w-100" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- ÍCONES -->
+                                <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+                                    <!-- Desvitalização -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselClove" data-bs-slide-to="0">
+                                        <img src="./Habilidades dos Agntes - Icons/CLOVE HAB/Desvitalização.svg"
+                                            width="40">
+                                        <span>Desvitalização</span>
+                                    </button>
+
+                                    <!-- Artimanha  -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselClove" data-bs-slide-to="1">
+                                        <img src="./Habilidades dos Agntes - Icons/CLOVE HAB/Artimanha.svg" width="40">
+                                        <span>Artimanha </span>
+                                    </button>
+
+                                    <!-- Revitalizar -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselClove" data-bs-slide-to="2">
+                                        <img src="./Habilidades dos Agntes - Icons/CLOVE HAB/Revitalizar.svg"
+                                            width="40">
+                                        <span>Revitalizar</span>
+                                    </button>
+
+                                    <!-- ULTIMATE -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselClove" data-bs-slide-to="3">
+                                        <img src="./Habilidades dos Agntes - Icons/CLOVE HAB/Ainda não morri.svg"
+                                            width="40">
+                                        <span>Ainda não morri</span>
+                                    </button>
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-vermelhovl" data-bs-dismiss="modal">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MODAL RAZE -->
+            <div class="modal fade modal-blur" id="modalRaze">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-4">Raze</h1>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./Corpos dos Agentes/corpo-raze.png" class="img-fluid rounded-4 mb-4">
+                            <p>
+                                Raze chega do Brasil com uma explosão de carisma e armas enormes. Com seu estilo de
+                                jogo
+                                "porradeiro", ela é craque em desentocar inimigos entrincheirados e limpar espaços
+                                apertados com uma bela dose de BUUUM!
+                            </p>
+
+                            <div
+                                class="bg-transparent border border-light text-white rounded-top-4 d-flex align-items-center justify-content-center p-2 mt-5">
+                                <h4 class="m-0" style="font-size: 30px; font-weight: 500;">HABILIDADES</h4>
+                            </div>
+
+
+                            <!-- CARROSSEL -->
+                            <section id="carouselRaze" class="carousel slide mx-auto">
+
+                                <div class="carousel-inner rounded-bottom-4 border border-light">
+                                    <div class="carousel-item CarouselMODAL active">
+                                        <img src="./Gifs/RAZE GIFS/BUMBA.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/RAZE GIFS/Carga de Explosivos.gif" class="d-block w-100"
+                                            alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/RAZE GIFS/Cartuchos de Tinta.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/RAZE GIFS/Estraga-Prazeres.gif" class="d-block w-100" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- ÍCONES -->
+                                <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+                                    <!-- Bumba -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselRaze" data-bs-slide-to="0">
+                                        <img src="./Habilidades dos Agntes - Icons/RAZE HAB/Bumba.svg" width="40">
+                                        <span>Bumba</span>
+                                    </button>
+
+                                    <!-- Carga de Explosivos  -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselRaze" data-bs-slide-to="1">
+                                        <img src="./Habilidades dos Agntes - Icons/RAZE HAB/Carga de Explosivos.svg"
+                                            width="40">
+                                        <span>Carga de Explosivos </span>
+                                    </button>
+
+                                    <!-- Cartuchos de Tinta  -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselRaze" data-bs-slide-to="2">
+                                        <img src="./Habilidades dos Agntes - Icons/RAZE HAB/Cartuchos de Tinta.svg"
+                                            width="40">
+                                        <span>Cartuchos de Tinta</span>
+                                    </button>
+
+                                    <!-- ULTIMATE -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselRaze" data-bs-slide-to="3">
+                                        <img src="./Habilidades dos Agntes - Icons/RAZE HAB/Estraga-Prazeres.svg"
+                                            width="40">
+                                        <span>Estraga-Prazeres</span>
+                                    </button>
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-vermelhovl" data-bs-dismiss="modal">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MODAL JETT -->
+            <div class="modal fade modal-blur" id="modalJett">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-4">Jett</h1>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./Corpos dos Agentes/jett-corpo.png" class="img-fluid rounded-4 mb-4">
+                            <p>
+                                Representando a Coreia do Sul, sua terra natal, Jett tem um estilo de luta ágil e
+                                evasivo que permite que ela assuma riscos como ninguém. Ela corre em meio a qualquer
+                                confronto, cortando os inimigos antes mesmo que eles percebam quem ou o que os
+                                atingiu.
+                            </p>
+
+                             <div
+                                class="bg-transparent border border-light text-white rounded-top-4 d-flex align-items-center justify-content-center p-2 mt-5">
+                                <h4 class="m-0" style="font-size: 30px; font-weight: 500;">HABILIDADES</h4>
+                            </div>
+
+                            <!-- CARROSSEL -->
+                            <section id="carouselJett" class="carousel slide mx-auto">
+
+                                <div class="carousel-inner rounded-bottom-4 border border-light">
+                                    <div class="carousel-item CarouselMODAL active">
+                                        <img src="./Gifs/JETT GIFS/Corrente Ascendente.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/JETT GIFS/Erupção de Brumas.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/JETT GIFS/Brisa de Impulso.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/JETT GIFS/Tormenta de Aço.gif" class="d-block w-100" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- ÍCONES -->
+                                <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+                                    <!-- Corrente Ascendente -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselJett" data-bs-slide-to="0">
+                                        <img src="./Habilidades dos Agntes - Icons/JETT HAB/Corrente Ascendente.svg"
+                                            width="40">
+                                        <span>Corrente Ascendente</span>
+                                    </button>
+
+                                    <!-- Erupção de Brumas -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselJett" data-bs-slide-to="1">
+                                        <img src="./Habilidades dos Agntes - Icons/JETT HAB/Erupção de Brumas.svg"
+                                            width="40">
+                                        <span>Erupção de Brumas </span>
+                                    </button>
+
+                                    <!-- Brisa de Impulso  -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselJett" data-bs-slide-to="2">
+                                        <img src="./Habilidades dos Agntes - Icons/JETT HAB/Brisa de Impulso.svg"
+                                            width="40">
+                                        <span>Brisa de Impulso</span>
+                                    </button>
+
+                                    <!-- ULTIMATE -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselJett" data-bs-slide-to="3">
+                                        <img src="./Habilidades dos Agntes - Icons/JETT HAB/Tormenta de Aço.svg"
+                                            width="40">
+                                        <span>Tormenta de Aço</span>
+                                    </button>
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-vermelhovl" data-bs-dismiss="modal">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MODAL GEKKO -->
+            <div class="modal fade modal-blur" id="modalGekko">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-4">Gekko</h1>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./Corpos dos Agentes/corpo-gekko.png" class="img-fluid rounded-4 mb-4">
+                            <p>
+                                Gekko, de Los Angeles, lidera um grupo muito unido de criaturas caóticas. Seus
+                                amigos
+                                atropelam tudo, tirando os inimigos do caminho. Depois, Gekko corre atrás deles para
+                                reagrupá-los e reiniciar o processo.
+                            </p>
+
+                             <div
+                                class="bg-transparent border border-light text-white rounded-top-4 d-flex align-items-center justify-content-center p-2 mt-5">
+                                <h4 class="m-0" style="font-size: 30px; font-weight: 500;">HABILIDADES</h4>
+                            </div>
+
+                              <!-- CARROSSEL -->
+                            <section id="carouselGekko" class="carousel slide mx-auto">
+
+                                <div class="carousel-inner rounded-bottom-4 border border-light">
+                                    <div class="carousel-item CarouselMODAL active">
+                                        <img src="./Gifs/GEKKO GIFS/Wingman.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/GEKKO GIFS/Dizzy.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/GEKKO GIFS/Mosh Pit.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/GEKKO GIFS/Thrash.gif" class="d-block w-100" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- ÍCONES -->
+                                <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+                                    <!-- Wingman -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselGekko" data-bs-slide-to="0">
+                                        <img src="./Habilidades dos Agntes - Icons/GEKKO HAB/Wingman.svg"
+                                            width="40">
+                                        <span>Wingman</span>
+                                    </button>
+
+                                    <!-- Dizzy -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselGekko" data-bs-slide-to="1">
+                                        <img src="./Habilidades dos Agntes - Icons/GEKKO HAB/Dizzy.svg"
+                                            width="40">
+                                        <span>Dizzy </span>
+                                    </button>
+
+                                    <!-- Mosh Pit -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselGekko" data-bs-slide-to="2">
+                                        <img src="./Habilidades dos Agntes - Icons/GEKKO HAB/Mosh Pit.svg"
+                                            width="40">
+                                        <span>Mosh Pit</span>
+                                    </button>
+
+                                    <!-- ULTIMATE -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselGekko" data-bs-slide-to="3">
+                                        <img src="./Habilidades dos Agntes - Icons/GEKKO HAB/Thrash.svg"
+                                            width="40">
+                                        <span>Thrash</span>
+                                    </button>
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-vermelhovl" data-bs-dismiss="modal">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MODAL SKYE -->
+            <div class="modal fade modal-blur" id="modalSkye">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-4">Skye</h1>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./Corpos dos Agentes/corpo-skye.png" class="img-fluid rounded-4 mb-4">
+                            <p>
+                                Mandando um salve direto da Austrália, Skye e sua equipe de feras desbravam
+                                territórios
+                                hostis. Com seus poderes de cura e suas criações que partem pra cima dos inimigos,
+                                qualquer equipe ficará mais forte e mais segura tendo Skye como aliada.
+                            </p>
+
+                             <div
+                                class="bg-transparent border border-light text-white rounded-top-4 d-flex align-items-center justify-content-center p-2 mt-5">
+                                <h4 class="m-0" style="font-size: 30px; font-weight: 500;">HABILIDADES</h4>
+                            </div>
+
+                              <!-- CARROSSEL -->
+                            <section id="carouselSkye" class="carousel slide mx-auto">
+
+                                <div class="carousel-inner rounded-bottom-4 border border-light">
+                                    <div class="carousel-item CarouselMODAL active">
+                                        <img src="./Gifs/SKYE GIFS/Predador Explosivo.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/SKYE GIFS/Luz Desbravadora.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/SKYE GIFS/Reflorescer.gif" class="d-block w-100" alt="">
+                                    </div>
+
+                                    <div class="carousel-item CarouselMODAL">
+                                        <img src="./GIFS/SKYE GIFS/Rastreadores.gif" class="d-block w-100" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- ÍCONES -->
+                                <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+                                    <!-- Predador Explosivo -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselSkye" data-bs-slide-to="0">
+                                        <img src="./Habilidades dos Agntes - Icons/SKYE HAB/Predador Explosivo.svg"
+                                            width="40">
+                                        <span>Predador Explosivo</span>
+                                    </button>
+
+                                    <!-- Luz Desbravadora -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselSkye" data-bs-slide-to="1">
+                                        <img src="./Habilidades dos Agntes - Icons/SKYE HAB/Luz Desbravadora.svg"
+                                            width="40">
+                                        <span>Luz Desbravadora </span>
+                                    </button>
+
+                                    <!-- Reflorescer -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselSkye" data-bs-slide-to="2">
+                                        <img src="./Habilidades dos Agntes - Icons/SKYE HAB/Reflorescer.svg"
+                                            width="40">
+                                        <span>Reflorescer</span>
+                                    </button>
+
+                                    <!-- ULTIMATE -->
+                                    <button type="button" class="botao-icon d-flex justify-content-center"
+                                        data-bs-target="#carouselSkye" data-bs-slide-to="3">
+                                        <img src="./Habilidades dos Agntes - Icons/SKYE HAB/Rastreadores.svg"
+                                            width="40">
+                                        <span>Rastreadores </span>
+                                    </button>
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-vermelhovl" data-bs-dismiss="modal">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer border-top border-light">
+
+            <h2>&copy; 2026 - Luiz Filipe Alves Dias</h2>
+            <p>Desenvolvedor Front-End • HTML • CSS • Bootstrap</p>
+
+            <div class="icones">
+
+                <a href="https://www.instagram.com/lipewee1/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://github.com/LuizAlvesDias" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:luiz.alves.dias@rede.ulbra.br">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <a href="https://wa.me/5551920028563" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
